@@ -47,6 +47,31 @@ void setup() {
   FSM_STATE = 0;
 
   // TODO : RFID SETUP
+
+  // initialize the light pins
+  pinMode(light0_r, INPUT);
+  pinMode(light0_g, INPUT);
+  pinMode(light0_b, INPUT);
+
+  pinMode(light1_r, INPUT);
+  pinMode(light1_g, INPUT);
+  pinMode(light1_b, INPUT);
+
+  // initialize the buzzer
+  pinMode(buzzer, OUTPUT);
+
+  // initialize the ultrasonic sensors
+  pinMode(pingPin0_0, OUTPUT);
+  pinMode(echoPin0_0, INPUT);
+
+  pinMode(pingPin0_1, OUTPUT);
+  pinMode(echoPin0_1, INPUT);
+
+  pinMode(pingPin1_0, OUTPUT);
+  pinMode(echoPin1_0, INPUT);
+
+  pinMode(pingPin1_1, OUTPUT);
+  pinMode(echoPin1_1, INPUT);
 }
 
 void doState0();
